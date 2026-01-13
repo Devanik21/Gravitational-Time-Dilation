@@ -1069,7 +1069,7 @@ def main():
         st.markdown("### 🌐 Interactive 3D Spacetime Curvature")
         with st.spinner("Generating 3D visualization..."):
             fig_3d = create_plotly_3d_visualization(calc)
-            st.plotly_chart(fig_3d, use_container_width=True)
+            st.plotly_chart(fig_3d, width='stretch')
         
         # Additional Plotly charts
         st.markdown("---")
@@ -1105,7 +1105,7 @@ def main():
             xaxis=dict(gridcolor='#333'),
             yaxis=dict(gridcolor='#333')
         )
-        st.plotly_chart(fig_dilation, use_container_width=True)
+        st.plotly_chart(fig_dilation, width='stretch')
     
     with tab4:
         st.markdown("## 🧮 Advanced Metrics & Calculations")
@@ -1173,7 +1173,7 @@ def main():
         }
         
         df = pd.DataFrame(data)
-        st.dataframe(df, use_container_width=True, height=800)
+        st.dataframe(df, width='stretch', height=800)
         
         # Additional calculations
         st.markdown("---")
