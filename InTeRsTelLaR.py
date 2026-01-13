@@ -694,11 +694,11 @@ def create_plotly_3d_visualization(calc):
     fig.update_layout(
         scene=dict(
             xaxis=dict(backgroundcolor='#0e1117', gridcolor='#333', showbackground=True, 
-                      title='X (million km)', titlefont=dict(color='#00ffcc')),
+                      title='X (million km)', tickfont=dict(color='#00ffcc')),
             yaxis=dict(backgroundcolor='#0e1117', gridcolor='#333', showbackground=True,
-                      title='Y (million km)', titlefont=dict(color='#00ffcc')),
+                      title='Y (million km)', tickfont=dict(color='#00ffcc')),
             zaxis=dict(backgroundcolor='#0e1117', gridcolor='#333', showbackground=True,
-                      title='Curvature', titlefont=dict(color='#00ffcc')),
+                      title='Curvature', tickfont=dict(color='#00ffcc')),
             camera=dict(eye=dict(x=1.5, y=1.5, z=1.2))
         ),
         paper_bgcolor='#0e1117',
